@@ -115,6 +115,20 @@ let app = {
         if (err) console.log(err);
       });
       this.todos = filters.active(this.todos);
+    }, 
+      
+    addCompleted: function (todo) {
+        todo.modified = true;
+        console.log(9999);
+        console.log(todo.modified);
+        console.log(todo.status);
+        console.log(todo.completed);
+
+//        todo.completed = true;//!(todo.completed);
+        
+        todoStorage.save(this.todos, function(err) {
+            if(err) console.log(err);
+        });
     }
   },
 

@@ -21,6 +21,7 @@ node_modules
 
 # EB Deployment artifacts 
 deploy
+
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
