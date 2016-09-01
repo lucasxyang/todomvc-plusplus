@@ -16,6 +16,9 @@
     "tutorial",
     "node.js"
   ],
+  "engines": {
+    "node": "6.2.2"
+  },
   "author": "Kevin Whinnery (front end code by Evan You)",
   "license": "MIT",
   "bugs": {
