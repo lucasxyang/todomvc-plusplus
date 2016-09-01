@@ -24,7 +24,6 @@ exports.update = (request, response) => {
   Todo.findById(request.param('id')).then((todo) => {
     if (!todo) return response.status(404);
     todo.title = request.body.title;
-    // todo.status = request.body.status;
     todo.status = request.body.status === false;
     return todo.save();
   }).then((todo) => {

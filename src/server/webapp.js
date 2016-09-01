@@ -5,29 +5,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const routes = require('./controllers/routes');
 const morgan = require('morgan');
-//const https = require('https');
-//var ua = require('universal-analytics');
-
 
 let app = express();
-
-
-// var options = {
-// };
-
-// const server = https.createServer(options, app);
-// const io = require('socket.io')(server);
-
 
 // Configure view engine and views directory
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.set('x-powered-by', false);
-
-// io.on('connection', function(req, res) {
-//     console.log(7777);
-//     res.send('<h3>HELLO</h3>');
-// });
 
 
 // Configure middleware
