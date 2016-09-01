@@ -30,13 +30,13 @@ module.exports = {
         });
           // toggle check box is NOT binded to any event handler in view/todos.js
       } else if (todo.id && todo.modified) {
-          console.log(todo.title + todo.modified + todo.status + todo.completed);
+          // console.log(todo.title + todo.modified + todo.status + todo.completed);
         // update 
         $.ajax('/todos/'+todo.id, {
           method: 'PUT',
           data: {
-            title: todo.title,
-            status: !todo.status //true // todo.status defined in view?
+            title: todo.title//,
+            // status: !todo.status //true // todo.status defined in view?
           }
         }).done(function(data) {
           todo.modified = false;

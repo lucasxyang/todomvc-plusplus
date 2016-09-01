@@ -12,8 +12,8 @@ const morgan = require('morgan');
 let app = express();
 
 
-var options = {
-};
+// var options = {
+// };
 
 // const server = https.createServer(options, app);
 // const io = require('socket.io')(server);
@@ -45,9 +45,6 @@ app.use('/todos', (request, response, next) => {
   response.set('X-Shenanigans', 'None');
   next();
 });
-
-
-
 
 // Mount application routes
 routes(app);
