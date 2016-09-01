@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Vue.js • TodoMVC</title>
+    <title>Vue11.js • TodoMVC</title>
     <link rel="stylesheet" href="/static/todomvc/base.min.css">
     <link rel="stylesheet" href="/static/todomvc/index.min.css">
     <% if (env === 'production') { %>
@@ -27,7 +27,7 @@
           <li class="todo" v-for="todo in filteredTodos" 
             :class="{completed: todo.completed, editing: todo == editedTodo}">
             <div class="view">
-              <input class="toggle" type="checkbox" v-model="todo.completed" v-on:click="addCompleted(todo)">
+              <input class="toggle" type="checkbox" v-model="todo.completed">
               <label @dblclick="editTodo(todo)">{{todo.title}}</label>
               <button class="destroy" @click="removeTodo(todo)"></button>
             </div>

@@ -115,7 +115,7 @@ let app = {
         if (err) console.log(err);
       });
       this.todos = filters.active(this.todos);
-    }, 
+    }/*, 
       
     addCompleted: function (todo) {
         todo.modified = true;
@@ -129,7 +129,7 @@ let app = {
         todoStorage.save(this.todos, function(err) {
             if(err) console.log(err);
         });
-    }
+    }*/
   },
 
   // a custom directive to wait for the DOM to be updated
